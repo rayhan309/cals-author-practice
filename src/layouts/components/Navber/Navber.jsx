@@ -10,7 +10,7 @@ const Navber = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
-      <div className="backdrop-blur-xl bg-gray-700 border-b border-white/20 shadow-lg">
+      <div className="backdrop-blur-xl bg-secondary border-b border-white/20 shadow-lg">
         <div className="container mx-auto px-6 py-4 flex items-center justify-between">
 
           {/* LOGO */}
@@ -18,7 +18,10 @@ const Navber = () => {
             <div className="w-9 h-9 bg-linear-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
               🚀
             </div>
-            DashForge
+            <span className="my-text">
+              
+              DashForge
+              </span>
           </Link>
 
           {/* DESKTOP MENU */}

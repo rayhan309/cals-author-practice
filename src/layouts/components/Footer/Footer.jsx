@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-700 text-gray-200 border-t border-gray-300">
+    <footer className="bg-secondary text-gray-200 border-t border-gray-300">
       <div className="container mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
 
         {/* Logo & Tagline */}
@@ -30,11 +30,11 @@ const Footer = () => {
         </div>
 
         {/* Social Icons */}
-        <div className="flex gap-4 text-gray-700 text-xl">
-          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+        <div className="flex gap-4 text-gray-400 text-xl">
+          <a href="https://github.com/rayhan309" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+          <a href="https://linkedin.com/in/abu-rayhan-undefined-2514b5390/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
             <FaLinkedin />
           </a>
           <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
