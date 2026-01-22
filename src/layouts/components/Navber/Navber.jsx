@@ -15,7 +15,7 @@ const Navber = () => {
 
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-2 text-white font-bold text-xl">
-            <div className="w-9 h-9 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
+            <div className="w-9 h-9 bg-linear-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
               🚀
             </div>
             DashForge

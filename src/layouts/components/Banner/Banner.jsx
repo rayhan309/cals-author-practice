@@ -37,6 +37,8 @@ const Banner = () => {
             alt="DashForge Logo"
             width={300}
             height={300}
+            className="w-auto h-auto"
+            loading="eager"
           />
         </div>
 

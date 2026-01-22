@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <nav>
           <Navber />
         </nav>
-        <main className="min-h-[calc(100vh-240px)] border">
+        <main className="min-h-[calc(100vh-240px)]">
           {children}
         </main>
         <footer>
