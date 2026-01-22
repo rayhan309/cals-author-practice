@@ -54,7 +54,7 @@ const cardVariants = {
 const Pricing = () => {
   return (
     <section className="py-24">
-      <div className="max-w-7xl mx-auto px-6 text-center space-y-12">
+      <div className="container mx-auto px-6 text-center space-y-12">
 
         {/* Section Title */}
         <div>

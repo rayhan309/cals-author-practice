@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { FaHome, FaInfoCircle, FaUser, FaSignInAlt, FaBars, FaTimes } from "react-icons/fa";
+import { FaHome, FaInfoCircle, FaUser, FaSignInAlt, FaBars, FaTimes, FaHammer } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,9 +15,7 @@ const Navber = () => {
 
           {/* LOGO */}
           <Link href="/" className="flex items-center gap-2 text-white font-bold text-xl">
-            <div className="w-9 h-9 bg-linear-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
-              🚀
-            </div>
+            <FaHammer className="text-purple-500 w-6 h-6 animate-bounce" />
             <span className="my-text">
               
               DashForge
@@ -31,7 +29,7 @@ const Navber = () => {
             <NavItem href="/dashboard" icon={<FaUser />} label="Dashboard" />
 
             {/* AUTH BUTTON */}
-            <button className="flex items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 px-5 py-2 rounded-full hover:scale-105 transition-all shadow-lg">
+            <button className="flex items-center gap-2 my-bg px-5 py-2 rounded-full hover:scale-105 transition-all shadow-lg">
               <FaSignInAlt />
               Login
             </button>
@@ -53,7 +51,7 @@ const Navber = () => {
             <MobileNavItem href="/about" icon={<FaInfoCircle />} label="About" />
             <MobileNavItem href="/dashboard" icon={<FaUser />} label="Dashboard" />
 
-            <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 px-5 py-3 rounded-xl hover:scale-105 transition-all shadow-lg">
+            <button className="w-full flex items-center justify-center gap-2 my-bg px-5 py-3 rounded-xl hover:scale-105 transition-all shadow-lg">
               <FaSignInAlt />
               Login
             </button>

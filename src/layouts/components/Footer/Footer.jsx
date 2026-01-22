@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaHammer, FaLinkedin, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => {
@@ -13,31 +13,29 @@ const Footer = () => {
         <div className="flex flex-col items-start space-y-2">
            {/* LOGO */}
           <Link href="/" className="flex items-center gap-2 text-white font-bold text-xl">
-            <div className="w-9 h-9 bg-linear-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
-              🚀
-            </div>
-            DashForge
+            <FaHammer className="text-purple-500 w-6 h-6 animate-bounce" />
+            <span className="my-text">DashForge</span>
           </Link>
           <p className="text-gray-300">Build. Control. Scale.</p>
         </div>
 
         {/* Quick Links */}
         <div className="flex flex-col md:flex-row gap-6 md:gap-10">
-          <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-          <Link href="/about" className="hover:text-blue-600 transition-colors">About</Link>
-          <Link href="/dashboard" className="hover:text-blue-600 transition-colors">Dashboard</Link>
-          <Link href="/contact" className="hover:text-blue-600 transition-colors">Contact</Link>
+          <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+          <Link href="/about" className="hover:text-primary transition-colors">About</Link>
+          <Link href="/dashboard" className="hover:text-primary transition-colors">Dashboard</Link>
+          <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
         </div>
 
         {/* Social Icons */}
         <div className="flex gap-4 text-gray-400 text-xl">
-          <a href="https://github.com/rayhan309" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+          <a href="https://github.com/rayhan309" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/abu-rayhan-undefined-2514b5390/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+          <a href="https://linkedin.com/in/abu-rayhan-undefined-2514b5390/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
             <FaTwitter />
           </a>
         </div>
