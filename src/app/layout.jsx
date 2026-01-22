@@ -9,7 +9,7 @@ const poppins = Poppins(
   }
 );
 
-export const Metadata = {
+export const metadata = {
   title: "DashForge – Role-Based Dashboard Management",
   description:
     "DashForge empowers teams with secure, role-based dashboards. Build, control, and scale your projects effortlessly.",
