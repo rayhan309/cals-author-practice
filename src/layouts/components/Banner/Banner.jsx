@@ -6,7 +6,8 @@ import { FaRocket } from "react-icons/fa";
 
 const Banner = () => {
   return (
-    <section className="relative bg-gray-200 text-secondary">
+    <section className="relative bg-gray-200 text-secondary
+    ">
       <div className="container mx-auto px-6 py-32 flex flex-col md:flex-row items-center justify-between">
 
         {/* Left Content */}
@@ -19,12 +20,12 @@ const Banner = () => {
           </p>
 
           <div className="flex gap-4 mt-6">
-            <button className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors shadow">
+            <button className="flex items-center gap-2 my-bg cursor-pointer text-white px-6 py-3 rounded-full font-semibold shadow">
               <FaRocket />
               Get Started
             </button>
 
-            <button className="px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors">
+            <button className="px-6 py-3 border cursor-pointer border-gray-300 rounded-full hover:bg-gray-200 transition-colors">
               Learn More
             </button>
           </div>

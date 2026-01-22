@@ -1,13 +1,3 @@
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
-import "./globals.css";
-import Navber from "@/layouts/components/Navber/Navber";
-import Footer from "@/layouts/components/Footer/Footer";
-
-const poppins = Poppins(
-  {
-    weight: ["100", "200", "300", "400", "500", "600", "700", "800"]
-  }
-);
 
 export const Metadata = {
   title: "DashForge – Role-Based Dashboard Management",
@@ -34,7 +24,7 @@ export const Metadata = {
     siteName: "DashForge",
     images: [
       {
-        url: "/logo.png", // replace with your logo path
+        url: "https://cals-author.vercel.app/logo.png", // replace with your logo path
         width: 800,
         height: 600,
         alt: "DashForge Logo",
@@ -49,7 +39,7 @@ export const Metadata = {
     description:
       "DashForge empowers teams with secure, role-based dashboards. Build, control, and scale your projects effortlessly.",
     creator: "@rayhan", // your twitter handle
-    images: ["/logo.png"], // same as OG image
+    images: ["https://cals-author.vercel.app/logo.png"], // same as OG image
   },
   robots: {
     index: true,
@@ -60,24 +50,3 @@ export const Metadata = {
     },
   },
 };
-
-
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body
-        className={`${poppins.className} antialiased`}
-      >
-        <nav>
-          <Navber />
-        </nav>
-        <main className="min-h-[calc(100vh-240px)]">
-          {children}
-        </main>
-        <footer>
-          <Footer />
-        </footer>
-      </body>
-    </html>
-  );
-}
